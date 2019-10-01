@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>POST방식</h1>
+	<p>
+		post방식은 URL에 데이터를 노출하지 않고 요청하는 것으로 보안 유지가 가능하다.
+		데이터를 Body에 포함하여 전송하므로 Body의 데이터를 설명하는 Content-Type헤더 필드
+		가 들어가고 어떤 타입인지 명시해주어야 한다.
+		Body에 데이터가 들어가 전송 길이는 제한이 없지만 최대 요청 받는 시간(Time out)이 존재해
+		페이지 요청, 기다리는 시간이 있다.
+	</p>
+</body>
+</html>

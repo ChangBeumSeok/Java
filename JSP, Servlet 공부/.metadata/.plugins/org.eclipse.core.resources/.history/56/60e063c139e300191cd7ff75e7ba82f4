@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	1. 톰캣 설치 (dev 폴더에 압축 풀기)
+	2. Server Runtime Environment에서 설치 경로 등록 (이클립스에 서버 연동)
+	3. 필요한 환경 세팅 (navigator, problems, servers, console)
+	4. 서버 등록(오라클 기본 포트와 동일하므로 8080 포트번호는 변경, server publishing 체크)
+	5. java EE 환경으로 설정
+	6. 파일 바로가기 생성(옵션)
+	7. 인코딩 설정(UTF-8)
+	8. dynamic project 만들기
+		- 프로젝트명은 신중하게
+		- output folder : 컴파일 된 클래스 파일들이 들어갈 곳 지정
+			-> 변경하는 이유는 실제로 배포될 폴더 안에 컴파일 된 클래스 파일들이 있어야 하므로
+			      배포 될 폴더가 WebContent 폴더라서 그 안에 WEB-INF라는 설정 정보들을 담을 폴더
+			      안에 classes 폴더로 경로를 잡는 것
+		- context Root : 애플리케이션에 접근하는 경로로 사용 될 별칭 같은 것
+		  (애플리케이션을 구분하기 위한 용도)
+		- context directory : context root가 가리킬 폴더. 즉, 배포되는 폴더의 최상위 폴더를 지정하는 것.
+		- Generate ~ 무조건 체크! : 배포 서술자라고 해서 애플리케이션에 대한 전체 설정 정보를 가지고 있는 
+		    파일인 web.xml이라는  파일을 만들기 위해 체크함
+ -->
+
+</body>
+</html>

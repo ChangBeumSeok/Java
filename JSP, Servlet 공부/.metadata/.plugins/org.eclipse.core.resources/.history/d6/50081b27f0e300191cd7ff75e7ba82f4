@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Hello JSP World!</h1>
+	<p>
+		HTML 형식에서 자바코드를 사용할 수 있는 "자바 언어"로<br>
+		서블릿에서 JAVA 코드로 응답 HTML을 구현했던 복잡함을 간단하게 작성, 해결할 수 있다. <br>
+		
+	</p>
+</body>
+</html>

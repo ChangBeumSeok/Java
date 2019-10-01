@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Hello JSP World!</h1>
+	<p>
+		HTML 형식에서 자바코드를 사용할 수 있는 "자바 언어"로<br>
+		서블릿에서 JAVA 코드로 응답 HTML을 구현했던 복잡함을 간단하게 작성, 해결할 수 있다. <br>
+		--> JSP의 가장 큰 장점은 Servlet에서 비지니스 로직(java)과 프레젠테이션 로직(html)을
+		분리할 수 있다는 것이다.<br>
+	</p>
+	<hr>
+	<h1>JSP Elements 표현법</h1>
+	<h2>1. JSP 스크립팅 원소(Scripting Element)</h2>
+	<p>JSP 페이지에 자바 코드를 직접 기술할 수 있게 해주는 기능이다.</p>
+	<ol>
+		<li>선언문 : %lt;%! 자바코드 %&gt;
+			멤버 변수와 메소드를 선언하기 위해 사용 <br><br>
+		</li>
+		<li>스크립틀릿 : %lt;% 자바코드 %&gt;
+			JSP에서 자바코드를 사용하기 위해 사용 <br><br>
+		</li>
+	</ol>
+</body>
+</html>

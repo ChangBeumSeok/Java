@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	배포 서술자(DD, Deployment Descripter)는 Java EE 스펙으로 웹 애플리케이션의
+	기본적인 설정을 위해 작성하는 파일 -> Servlet, Filter, Wrapper 등으로 연결해주는 역할
+	개발자가 web.xml을 수정하지 않고도 개발/운영이 가능하지만 규모가 커지고 필터 서블릿 등을
+	사용하게 되면 직접 수정해야 함
+ -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>1_Servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 2. web.xml을 통한 서블릿 매핑 -->
+  <servlet>
+  </servlet>
+</web-app>

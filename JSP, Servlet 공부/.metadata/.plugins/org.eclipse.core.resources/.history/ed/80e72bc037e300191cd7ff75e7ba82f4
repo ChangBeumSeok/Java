@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	1. 톰캣 설치 (dev 폴더에 압축 풀기)
+	2. Server Runtime Environment에서 설치 경로 등록 (이클립스에 서버 연동)
+	3. 필요한 환경 세팅 (navigator, problems, servers, console)
+	
+ -->
+
+</body>
+</html>

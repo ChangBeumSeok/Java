@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!--  이 페이지의 언어는 java언어이다.
+	  contentType은 문서형식이 html이고 인코딩은 UTF-8이다. 를 알리는 부분 -->
+
+<%  // <% 스크립틀릿이라고 해서 이 안에 java 코드를 작성할 수 있다.
+	// TestServlet3.java에서 이쪽으로 위임하기 위해 request 객체에 setAttribute로 
+    // 데이터를 담아줌. 꺼내올 때는 getAttribute를 사용 -> Object 반환하므로 강제 형변환
+    String name = (String)request.getAttribute("name");
+    String age = (String)request.getAttribute("age");
+    String city = (String)request.getAttribute("city");
+    String height = (String)request.getAttribute("height");
+    String gender = (String)request.getAttribute("gender");
+    String food = (String)request.getAttribute("foods");
+    
+    // 페이지 로딩과 동시에 가져오기 위해 보통 꺼내는 부분은 위쪽에서 작업함
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+</body>
+</html>

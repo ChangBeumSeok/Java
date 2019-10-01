@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	1. 톰캣 설치 (dev 폴더에 압축 풀기)
+	2. Server Runtime Environment에서 설치 경로 등록 (이클립스에 서버 연동)
+	3. 필요한 환경 세팅 (navigator, problems, servers, console)
+	4. 서버 등록(오라클 기본 포트와 동일하므로 8080 포트번호는 변경, server publishing 체크)
+	5. java EE 환경으로 설정
+	6. 파일 바로가기 생성(옵션)
+	7. 인코딩 설정(UTF-8)
+	8. dynamic project 만들기
+		- 프로젝트명은 신중하게
+		- output folder : 컴파일 된 클래스 파일들이 들어갈 곳 지정
+		
+	
+	
+ -->
+
+</body>
+</html>

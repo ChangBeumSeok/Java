@@ -1,0 +1,70 @@
+package com.kh.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class TestSevlet1
+ */
+@WebServlet("/test")
+public class TestSevlet1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public TestSevlet1() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 첫번 째 파라미터 HttpServletRequest request
+		// : 웹 브라우저에서 사용자가 요청한 내용을 받아주는 용도
+		// 두번 째 파라미터 HttpServletResponse response 
+		// : 첫번 째 파라미터에서 처리한 결과를 웹 브라우저에서 사용자에게 보여주기 위한 용도로 사용
+		
+		// request : 요청에 대한 정보들(사용자가 입력한 값, 요청한 사용자의 ip등등..)이 담김
+		// response : 요청 처리 후 응답을 할 때 사용하는 객체
+		
+		// 사용자가 보낸 정보를 받아내기 위한 메소드
+		//request.getParameter("name 속성 값") -> 해당 value 값(무조건 String) 리턴
+		String name = request.getParameter("name");
+		String gender = request.getParameter("gender");
+		String age = request.getParameter("age");
+		String city = request.getParameter("city");
+		String height = request.getParameter("height");
+		
+		// 체크 박스등 복수 개의 정보를 받을 때는 name 값을 기준으로 배열로 받아야 됨
+		// request.getParameterValues("name 속성 값") -> 해당 value 값들 배열(String 배열)에
+		String[] foodArr = request.getParameterValues("food");
+		
+		// 변수값 출력을 통해 사용자가 요청을 통해 전달한 값이 잘 넘어오는지 테스트
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

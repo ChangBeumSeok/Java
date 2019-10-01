@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	1. 톰캣 설치 (dev 폴더에 압축 풀기)
+	2. Server Runtime Environment에서 설치 경로 등록 (이클립스에 서버 연동)
+	3. 필요한 환경 세팅 (navigator, problems, servers, console)
+	4. 서버 등록(오라클 기본 포트와 동일하므로 8080 포트번호는 변경, server publishing 체크)
+	
+	
+ -->
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GET</title>
+</head>
+<body>
+	<h1>GET 방식</h1>
+	<p>
+		GET방식은 URL에 변수(데이터)를 포함시켜 요청하는 것으로 보안 유지가 불가능하다.<br>
+		따라서 로그인 같은 경우 get방식이 부적합하다. get 방식에서 데이터를 Header에 포함
+		하며 전송하는데 <br> Body는 보통 빈 상태로 전송되며 Header의 내용 중 Body의 데이터
+		를 설명하는 Content-Type 헤더 필드도 들어가지 않는다. <br>
+		Header에 데이터가 들어가기 때문에 전송하는 길이에 제한이 있으며 초과 데이터는 절단된다.
+	</p>
+	
+	<h2>개인 정보 입력 - GET</h2>
+	당신의 개인정보를 입력하겠습니다.<br>
+	데이터 입력 후 확인 버튼을 눌러주세요.<br>
+	
+	<form action="/1_Servlet/test1" method="get">
+		<ul style="list-style:none; line-height:200%">
+			<li>이름 : <input type="text" name="name" size="10"></li>
+			<li>성별 : 
+				남자<input type="radio" name="gender" value="남자">
+				여자<input tpye="radio" name="gender" value="여자">
+			<li>나이 : 
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
