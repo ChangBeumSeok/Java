@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!--  이 페이지의 언어는 java언어이다.
+	  contentType은 문서형식이 html이고 인코딩은 UTF-8이다. 를 알리는 부분 -->
+
+<%  // <% 스크립틀릿이라고 해서 이 안에 java 코드를 작성할 수 있다.
+	// TestServlet3.java에서 이쪽으로 위임하기 위해 request 객체에 setAttribute로 
+    // 데이터를 담아줌. 꺼내올 때는 getAttribute를 사용 -> Object 반환하므로 강제 형변환
+    String name = (String)request.getAttribute("name");
+    String age = (String)request.getAttribute("age");
+    String city = (String)request.getAttribute("city");
+    String height = (String)request.getAttribute("height");
+    String gender = (String)request.getAttribute("gender");
+    String food = (String)request.getAttribute("foods");
+    
+    // 페이지 로딩과 동시에 가져오기 위해 보통 꺼내는 부분은 위쪽에서 작업함
+%>
+<!-- 
+	getParameter
+	: 클라이언트의 HTML 페이지에서 필요한 정보를 얻는데 사용
+	    웹 브라우저에서 전송 받은 request 영역에서 name 값이 같은 것을 찾아 값을 읽어옴
+	    항상 String 반환
+	
+	getAttribute
+	: 이전에 다른 JSP 또는 Servlet 페이지에 설정 된 매개변수를 가져오는데 사용
+	  request.setAttribute에서 설정해준 값을 가져오며 설정이 없으면 무조건 null
+	  Object 반환
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h2{color:red;}
+	span.name {color:orange; font-weight:bold;}
+	span.gender {color:yellow; font-weight:bold;}
+	span.age {color:green; font-weight:bold;}
+	span.city {color:blue; font-weight:bold;}
+	span.height {color:navy; font-weight:bold;}
+	span.food {color:purple; font-weight:bold;}
+</style>
+</head>
+<body>
+	<h2>개인 취향 테스트 결과(POST)</h2>
+	<span class='name'><%= name %></span>님은
+	<span class='age'><%=age %></span>이시며, 
+	<span class='city'><%=city %></span>에 사는
+	키<span class='height'><%=height %></span>cm인
+	<span class='gender'><%= gender %></span>입니다.
+	좋아하는 음식은 <span class='food'><%=food %></span>입니다.
+	
+</body>
+</html>
